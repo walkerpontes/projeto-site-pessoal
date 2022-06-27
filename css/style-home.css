@@ -1,0 +1,287 @@
+body {
+    font-family: 'Montserrat' , sans-serif;
+}
+
+header {
+
+    background: black ;
+    padding: 30px 0;
+    
+
+    
+}
+
+
+
+
+.cabecario img {
+
+    display: inline-block;
+    margin: 0 5px
+}
+
+.cabecario img:hover {
+    transform: rotate(720deg);
+    transition: 1.5s;
+}
+
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    color: white;
+    
+    
+}
+.cabecario{
+    margin: 0 25px;
+}   
+
+
+main{
+    padding: 40px 0;
+    background: linear-gradient(rgb(64, 64, 64),black);
+}
+
+.imagem-perfil{
+    border-radius: 50%;
+    max-width: 40%;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+.perfil {
+    display: inline-block;
+    position: absolute;
+    border: #CCCCCC solid 2px;
+    margin-right: 1120px;
+    margin-left: 25px;
+    top: 240px;
+    text-align: center;
+    transition: 0.5s all ;
+}
+
+.nome-perfil{ 
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+
+}
+.titulo-perfil{
+    font-size: 15px;
+    padding-top: 10px;
+    color: #CCCCCC;
+}
+
+
+.perfil li {
+    display: inline-block;
+    list-style: none;
+    margin: 36px 10px 46px;
+    text-decoration: none;
+
+    
+}
+
+.perfil:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 0px rgba(208, 208, 208, 0.586);
+}
+
+
+.perfil li a{
+    text-decoration: none;
+    color: white;
+
+
+}
+.lista-perfil {
+    padding-top: 25px ;
+}
+
+.lista-perfil svg {
+    padding: 0 5px;
+    transition: 0.5s all ;
+}
+.lista-perfil svg:hover{
+
+    transform: scale(1.2);
+}
+.vida{
+    padding: 20px 50px 40px 10px;
+    margin-left: 300px;
+    padding-bottom: 80px;
+    display: inline-block;
+    text-align: left;
+
+   
+    
+   
+}
+
+.vida h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 15px 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    color: white;
+}
+
+.vida p, .vida p a{
+    margin: 15px 0;
+    line-height: 2;
+    font-size: 15px;
+    color: #CCCCCC;
+    
+}
+
+.vida p a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.texto{
+    margin: 0 40px;
+}
+
+.texto::first-letter{
+    
+    
+    margin-left: 25px;
+    font-size: 18px;
+
+
+
+}
+
+.meio{
+    border-bottom: solid 1px rgb(217, 217, 217);
+}
+
+
+.sonho{
+    display:block;
+    margin: 0 400px;
+    text-align: center;
+
+}
+
+.sonho h2, .estudos h2{
+    font-size: 30px;
+    color:white;
+    padding: 25px 0;
+    
+}
+
+.tabela-itens {
+    border: 2px rgba(191, 191, 191, 0.363) solid;
+    border-radius: 1cm ;
+    background: rgba(191, 191, 191, 0.363);
+    text-align: center;
+    padding: 30px 0;
+    transition: 0.5s all ;
+}
+
+.tabela-itens:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 0px rgba(208, 208, 208, 0.586);
+}
+
+
+.tabela-itens li{
+    padding: 10px 15px;
+    color: whitesmoke;
+    transition: 1s all ;
+}
+
+.tabela-itens li:hover{
+    
+    transform: scale(1.01);
+}
+
+
+
+.estudos{
+    margin-top: 70px ;
+    text-align: center;
+    display:block;
+    
+    
+}
+
+.java,.bd,.html{
+    display: inline-grid;
+    margin: 0 40px;
+    transition: 0.5s;
+}
+
+.html:hover{
+    transform: scale(1.01);
+    
+}
+
+.java:hover{
+    transform: scale(1.01);
+    
+}
+
+.bd:hover{
+    transform: scale(1.01);
+    
+}
+
+.estudos h3{
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.tabela-java,.tabela-bd,.tabela-html{
+    border: solid 2px rgba(191, 191, 191, 0.363);
+    border-radius: 1cm ;
+    background: rgba(191, 191, 191, 0.363);
+    padding: 10px 25px;
+    margin: 0 20;
+    transition: 0.5s  all;
+}
+
+.tabela-java:hover{
+    box-shadow: 0px 0px 10px 0px rgba(208, 208, 208, 0.586);
+}
+.tabela-bd:hover{
+    box-shadow: 0px 0px 10px 0px rgba(208, 208, 208, 0.586);
+}
+.tabela-html:hover{
+    box-shadow: 0px 0px 10px 0px rgba(208, 208, 208, 0.586);
+}
+
+.estudos li{
+    padding: 10px 0;
+    color: white;
+    transition: 0.5s all;
+
+}
+
+.estudos li:hover{
+    transform: scale(1.05);
+    
+}
+
+footer{
+    text-align: center;
+    background: black;
+    padding: 116px 0 64px 0;
+    
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
