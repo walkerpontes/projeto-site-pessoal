@@ -1,15 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
 
-body {
-    font-family: 'Montserrat' , sans-serif;
+::-webkit-scrollbar{
+    background: #000000;
+    width: 0.6rem;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(7, 1, 90);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
 header {
 
     position: fixed;
     width: 100%;
-    background: black ;
-    padding: 30px 0;
+    background: rgba(0, 0, 0, 0.93);
+    padding: 1rem 0;
     z-index: 999;
+    
     
 
     
@@ -51,14 +64,14 @@ h1 {
 main{
     position: relative;
     padding: 40px 0;
-    background: linear-gradient(rgb(64, 64, 64),black);
+    background: image("Sprinkle.svg");
     top: 112px;
 }
 
 .meio{
-    border-bottom: solid 1px rgb(217, 217, 217);
     padding: 0 80px 0 80px;
     display: flex;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -151,38 +164,32 @@ main{
     font-size: 30px;
     font-weight: bold;
     margin: 15px 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 5px;
     padding-left: 25px;
     color: white;
 }
 
-.vida p, .vida p a{
+.vida p, .vida a{
     margin: 15px 0;
     line-height: 2;
     font-size: 15px;
     color: #CCCCCC;
-
-}
-
-.vida p a{
     text-decoration: none;
-    color: white;
 
 }
+.vida p{
+    overflow: hidden;
+}
+.ler{
+    position: absolute;
+    right: 2.3rem;
+    bottom: 5.27rem;
+}
+
 
 .texto{
-    margin: 0 40px;
-}
-
-.texto::first-letter{
-
-
-    margin-left: 25px;
-    font-size: 18px;
-
-
-
+   padding: 0 25px;
 }
 
 
@@ -195,10 +202,10 @@ main{
     text-align: center;
     padding-top: 50px;
     padding-bottom: 100px;
-    border-bottom: solid 1px rgb(217, 217, 217);
+
 }
 
-.sonho h2, .estudos h2{
+.sonho h2, .estudos h2, .projetos h2{
     font-size: 30px;
     color:white;
     padding: 25px 0;
@@ -206,42 +213,42 @@ main{
 }
 
 .tabela-itens {
-    position: relative;
-    border: 2px rgba(191, 191, 191, 0.363) solid;
-    border-radius: 1cm ;
-    background: rgba(191, 191, 191, 0.363);
-    text-align: center;
     padding: 30px 0;
-    margin: 60px 0;
-    width: 400px;
-    transition: 0.5s all ;
+    width: 100%;
+    transition: 0.5s all;
+    margin-top: 40px;
+
 }
 
-.tabela-itens:hover{
-    transform: scale(1.01);
-    box-shadow: 0 0 10px 0 rgba(208, 208, 208, 0.586);
+.tabela-itens ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: 0 55px;
 }
-
-
+.itens{
+    position: relative;
+}
+.itens:not(:last-child)::after{
+    content: url("seta.svg");
+    position: absolute;
+    right: -10px;
+    top: 20px;
+}
 .tabela-itens li{
-    padding: 10px 15px;
+    margin-top: 20px;
+    padding: 25px 35px;
     color: whitesmoke;
     transition: 1s all ;
 }
-
-.tabela-itens li:hover{
-    
-    transform: scale(1.01);
-}
-
-
 
 .estudos{
     margin: 70px 0 0 0;
     padding-bottom: 150px;
     text-align: center;
     display:block;
-    border-bottom: solid 1px rgb(217, 217, 217);
+
     
 }
 
@@ -249,6 +256,7 @@ main{
     display: inline-grid;
     margin: 0 40px;
     transition: 0.5s;
+    background: #cccccc3f;
 }
 
 .html:hover{
@@ -274,26 +282,57 @@ main{
 
 .tabela{
     display: flex;
+    margin-top: 7rem;
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
 }
 .java,.bd,.html{
-    margin-top: 60px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 20rem;
+    height: 10rem;
+    border-radius: 15px 15px ;
 }
 
 .tabela-java,.tabela-bd,.tabela-html{
+    display: flex;
+    position: absolute;
+    gap: 2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border: solid 2px rgba(255, 255, 255, 0.07);
-    border-radius: 15px ;
+    font-size: 14px;
+    border-radius:15px 15px ;
     background: rgba(255, 255, 255, 0.07);
-    padding: 10px 25px;
-    margin: 0 20px;
-
-    transition: 0.5s  all;
+    transition: 0.5s ease-out;
+    width: 400px;
+    height: 100%;
+    left: -1000px;
+    visibility: hidden;
+    overflow: hidden;
+    
 }
 
-.tabela-java:hover,.tabela-html:hover,.tabela-bd:hover{
+.java:hover .tabela-java,.html:hover .tabela-html,.bd:hover .tabela-bd{
+    width: 100%;
+    left: 0;
+    visibility: visible;
     box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.1);
+}
+.java:hover h3,.bd:hover h3,.html:hover h3{
+    visibility: hidden;
+}
+.java:hover,.bd:hover,.html:hover{
+    flex: 2;
+    max-width: 25rem;
 }
 
 
@@ -309,9 +348,72 @@ main{
     
 }
 
+.projetos{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    transition: 1s;
+    overflow: hidden;
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.slide-projetos{
+    position: relative;
+    width: 80%;
+
+}
+
+.container-projetos{
+    display: grid;
+    gap: 30px;
+    grid-auto-flow: column;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    overflow-x: scroll;
+}
+.container-projetos::-webkit-scrollbar{
+    display: block;
+    height: 4px;
+    padding: 50px 0;
+}
+.container-projetos::-webkit-scrollbar-thumb{
+    background: #CCCCCC;
+    padding: 50px 0;
+}
+
+
+.projeto{
+    height: 250px;
+    width: 250px;
+    background: #cccccc79;
+    border: #CCCCCC 2px solid;
+}
+
+
+.btn-left,.btn-right{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+}
+
+
 footer{
     text-align: center;
-    background: black;
     padding: 116px 0 64px 0;
     
 }
