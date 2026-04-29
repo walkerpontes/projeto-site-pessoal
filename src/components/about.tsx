@@ -43,8 +43,7 @@ export default function About() {
               APIs REST e aplicações web eficientes e escaláveis. Tenho facilidade em desenvolver
               sistemas bem estruturados e interfaces intuitivas, com design moderno e foco na
               experiência do usuário. Atualmente, estudo{' '}
-              <span className="text-blue-400 font-bold">Java, TypeScript, Next, C# </span> e curso
-              Ciência da Computação pela Anhanguera, em São Luís, sempre buscando evolução contínua
+              <span className="text-blue-400 font-bold">Java, TypeScript, Next, C#.</span> Sou graduando de Ciência da Computação, sempre buscando evolução contínua
               e boas práticas de desenvolvimento.
             </p>
           </div>
