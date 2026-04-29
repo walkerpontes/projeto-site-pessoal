@@ -18,7 +18,7 @@ export default function Header() {
   return (
     <>
       <header
-        className={`w-full px-10 fixed z-999 backdrop-blur-lg ${isScrolled ? 'dark:bg-[#0000009a] bg-[#f5f5f5e5]' : 'bg-transparent'}`}
+        className={`w-full md:px-10 fixed z-999 backdrop-blur-lg ${isScrolled ? 'dark:bg-[#0000009a] bg-[#f5f5f5e5]' : 'bg-transparent'}`}
       >
         <div className=" relative w-full h-25 gap-2 flex flex-col justify-center lg:flex-row lg:justify-between flex-wrap items-center dark:text-white font-bold ">
           <div

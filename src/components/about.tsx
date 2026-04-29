@@ -1,19 +1,21 @@
 import { motion } from 'framer-motion';
 import { Badge } from './ui/badge';
 import perfil from '../assets/imagem-perfil.jpg';
-
+import { Backpack } from 'lucide-react';
+import curriculo from "../assets/curriculoWalkerPontes.pdf"
 
 const BadgeMotion = motion(Badge);
 
 export default function About() {
-  
-
   return (
     <>
       <div className="flex md:flex-row px-15 md:px-40 justify-around pt-50 pb-30 flex-wrap-reverse">
-        <div className="flex flex-col w-240 w-min-100 dark:text-white gap-2 md:gap-6 mr-0" id="sobre">
+        <div
+          className="flex flex-col w-240 w-min-100 dark:text-white gap-2 md:gap-6 mr-0"
+          id="sobre"
+        >
           <h2 className="text-xl md:text-4xl font-bold">Oi, eu sou Walker</h2>
-          <h2 className="text-xl md:text-4xl font-bold flex flex-row items-baseline gap-2">
+          <h2 className="text-xl md:text-4xl font-bold flex flex-row flex-wrap items-end gap-2">
             Um desenvolvedor
             <div className="h-[1.2em] xl:w-45 leading-tight overflow-hidden">
               <motion.div
@@ -37,24 +39,27 @@ export default function About() {
           </h2>
           <div className="text-[12px] md:text-[15px] ">
             <p>
-              Desde pequeno sempre me interessei por tecnologia, então o campo da progamação me
-              mostrou o que mais eu queria, que era a possibidade de por minhas ideias na realidade.
-              Tenho o sonho de me tornar aquele que sabe e entende de tudo, por isso escolhi a
-              carreira FullStack. Atualmente, estudo{' '}
-              <span className="text-blue-400 font-bold">Java, TypeScript, Next, C# </span> e sempre
-              buscando aprimorar minhas habilidades e acompanhar as boas práticas do mercado. Estou
-              comprometido com o aprendizado contínuo e motivado a transformar conhecimento em
-              soluções reais.
+              O campo da progamação me mostrou o que mais eu queria, que era a possibidade de por
+              minhas ideias na realidade. Atuo como desenvolvedor FullStack com foco na criação de
+              APIs REST e aplicações web eficientes e escaláveis. Tenho facilidade em desenvolver
+              sistemas bem estruturados e interfaces intuitivas, com design moderno e foco na
+              experiência do usuário. Atualmente, estudo{' '}
+              <span className="text-blue-400 font-bold">Java, TypeScript, Next, C# </span> e curso
+              Ciência da Computação pela Anhanguera, em São Luís, sempre buscando evolução contínua
+              e boas práticas de desenvolvimento.
             </p>
           </div>
           <div className="flex flex-row gap-2 flex-wrap">
             <BadgeMotion
               initial={{ x: 100 }}
               whileInView={{ x: 0 }}
-              transition={{ duration: 0.6}}
-              className="bg-red-400 md:h-7 md:text-[12px] p-5"
+              transition={{ duration: 0.6 }}
+              className="bg-linear-to-l to-purple-400 from-red-400 md:h-7 md:text-[12px] p-5"
             >
-              <a href="https://www.instagram.com/walkerponts/" className="w-full h-full flex items-center justify-center gap-2 ">
+              <a
+                href="https://www.instagram.com/walkerponts/"
+                className="w-full h-full flex items-center justify-center gap-2 "
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="white"
@@ -69,10 +74,13 @@ export default function About() {
             <BadgeMotion
               initial={{ x: 100 }}
               whileInView={{ x: 0 }}
-              transition={{ duration: 0.8}}
+              transition={{ duration: 0.8 }}
               className="bg-blue-500 md:h-7 md:text-[12px] p-5"
             >
-              <a href="https://www.linkedin.com/in/walkerpontes/" className="w-full h-full flex items-center justify-center gap-2">
+              <a
+                href="https://www.linkedin.com/in/walkerpontes/"
+                className="w-full h-full flex items-center justify-center gap-2"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -89,10 +97,13 @@ export default function About() {
             <BadgeMotion
               initial={{ x: 100 }}
               whileInView={{ x: 0 }}
-              transition={{ duration: 1}}
+              transition={{ duration: 1 }}
               className="bg-[#696969] h-7 text-[12px] p-5"
             >
-              <a href="https://github.com/walkerpontes" className="w-full h-full flex items-center justify-center gap-2">
+              <a
+                href="https://github.com/walkerpontes"
+                className="w-full h-full flex items-center justify-center gap-2"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -106,12 +117,27 @@ export default function About() {
                 <span className="text-white">GitHub</span>
               </a>
             </BadgeMotion>
+            <BadgeMotion
+              initial={{ x: 100 }}
+              whileInView={{ x: 0 }}
+              transition={{ duration: 1.02 }}
+              className="bg-red-500 h-7 text-[12px] p-5"
+            >
+              <a
+                href={curriculo}
+                download="curriculoWalkerPontes.pdf"
+                className="w-full h-full flex items-center justify-center gap-2"
+              >
+                <Backpack className="text-white" size={20}/>
+                <span className="text-white">CV</span>
+              </a>
+            </BadgeMotion>
           </div>
         </div>
 
         <div className="relative mb-15 md:mb-30">
           <motion.div
-            animate={{ x: [0, -50, -50, 0, 0], y: [-10,-10, -50, -50, -10] }}
+            animate={{ x: [0, -50, -50, 0, 0], y: [-10, -10, -50, -50, -10] }}
             transition={{
               duration: 10,
               repeat: Infinity,
