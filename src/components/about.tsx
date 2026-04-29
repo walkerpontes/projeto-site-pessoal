@@ -39,8 +39,7 @@ export default function About() {
           </h2>
           <div className="text-[12px] md:text-[15px] ">
             <p>
-              O campo da progamação me mostrou o que mais eu queria, que era a possibidade de por
-              minhas ideias na realidade. Atuo como desenvolvedor FullStack com foco na criação de
+              O campo da progamação me mostrou o que mais eu queria: a possibidade de transformar minhas ideias em realidade. Atuo como desenvolvedor FullStack com foco na criação de
               APIs REST e aplicações web eficientes e escaláveis. Tenho facilidade em desenvolver
               sistemas bem estruturados e interfaces intuitivas, com design moderno e foco na
               experiência do usuário. Atualmente, estudo{' '}
