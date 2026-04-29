@@ -200,7 +200,7 @@ export default function Certificate() {
               whileInView={{ opacity: 1, y: 0 }}
               whileHover="hover"
               transition={{ duration: 0.5}}
-              className="relative mx-auto w-100  pt-0"
+              className="relative mx-auto w-[25em]  pt-0"
             >
               <motion.img
                 src={cert.image}
