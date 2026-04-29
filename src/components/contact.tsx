@@ -97,7 +97,7 @@ export default function Contact() {
                   <FieldLabel htmlFor="checkout-7j9-optional-comments">Descrição</FieldLabel>
                   <textarea
                     id="checkout-7j9-optional-comments"
-                    placeholder="Adicione o sua descrição"
+                    placeholder="Adicione a sua descrição"
                     className="resize-none border p-2 rounded-[5px]"
                     onChange={(e) => setDescricao(e.target.value)}
                     value={descricao}
