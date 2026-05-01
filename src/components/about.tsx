@@ -39,13 +39,11 @@ export default function About() {
           </h2>
           <div className="text-[12px] md:text-[15px] ">
             <p>
-              O campo da progamação me mostrou o que mais eu queria, que era a possibidade de por
-              minhas ideias na realidade. Atuo como desenvolvedor FullStack com foco na criação de
+              O campo da progamação me mostrou o que mais eu queria: a possibidade de transformar minhas ideias em realidade. Atuo como desenvolvedor FullStack com foco na criação de
               APIs REST e aplicações web eficientes e escaláveis. Tenho facilidade em desenvolver
               sistemas bem estruturados e interfaces intuitivas, com design moderno e foco na
               experiência do usuário. Atualmente, estudo{' '}
-              <span className="text-blue-400 font-bold">Java, TypeScript, Next, C# </span> e curso
-              Ciência da Computação pela Anhanguera, em São Luís, sempre buscando evolução contínua
+              <span className="text-blue-400 font-bold">Java, TypeScript, Next, C# </span> e sou graduando de Ciência da Computação, sempre buscando evolução contínua
               e boas práticas de desenvolvimento.
             </p>
           </div>
