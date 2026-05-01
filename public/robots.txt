@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://walkerpontes.vercel.app/sitemap.xml
