@@ -12,7 +12,7 @@ export default function Experience() {
         <motion.h2
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+          transition={{ duration: 0.5 }}
             viewport={{ once:true }}
           className="text-xl md:text-4xl font-bold"
         >
@@ -53,7 +53,7 @@ export default function Experience() {
           <motion.div
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: 'easeOut' }}
+            transition={{ duration: 0.7, ease: 'easeOut' }}
             className="flex flex-col gap-5 md:gap-10  p-10 w-70 md:w-100 rounded-[5px] hover:scale-102 transition-all duration-500  border border-green-500 bg-card"
           >
             <SquareCode className=" rounded-[10px] bg-green-600 p-2 w-12 h-12 md:p-4 md:w-20 md:h-20 text-white" />

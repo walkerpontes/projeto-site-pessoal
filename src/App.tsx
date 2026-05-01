@@ -27,6 +27,14 @@ function App() {
   };
 
   useEffect(() => {;
+
+    const oldTheme = document.querySelectorAll('meta[name="theme-color"]')
+    oldTheme.forEach((tag) => tag.remove())
+    const meta = document.createElement('meta');
+    meta.name = "theme-color";
+    meta.content = dark ? "#000000" : "#ffffff";
+    document.head.appendChild(meta);
+
     if (dark) {
       localStorage.setItem('theme', 'dark');
       document.documentElement.classList.add('dark');
@@ -47,7 +55,7 @@ function App() {
           className=" h-[3em] w-[3em] bg-[#1313137c] dark:bg-[#3131318f] backdrop-blur-lg"
           onClick={theme}
         >
-          <Sun className="relative scale-0 dark:scale-100 dark:text-white"></Sun>
+          <Sun className="relative scale-0 dark:scale-100 dark:text-yellow-500"></Sun>
           <Moon className="absolute  dark:scale-0 scale-100 text-white"></Moon>
         </Button>
 

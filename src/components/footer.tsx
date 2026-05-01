@@ -9,7 +9,7 @@ export default function Footer() {
       <footer className="w-full h-70 flex flex-wrap flex-col justify-center items-center  gap-10">
         <div className="flex flex-row gap-10 flex-wrap">
           <Badge className="bg-[#808080bd] h-7 text-[12px] p-5">
-            <a href="https://www.instagram.com/walkerponts/" className="w-full h-full flex items-center ">
+            <a href="https://www.instagram.com/walkerponts/" className="w-full h-full flex items-center" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -23,7 +23,7 @@ export default function Footer() {
             </a>
           </Badge>
           <Badge className="bg-[#808080bd]  h-7 text-[12px] p-5">
-            <a href="https://www.linkedin.com/in/walkerpontes/" className="flex gap-2 ">
+            <a href="https://www.linkedin.com/in/walkerpontes/" className="flex gap-2" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -37,7 +37,7 @@ export default function Footer() {
             </a>
           </Badge>
           <Badge className="bg-[#808080bd] h-7 text-[12px] p-5">
-            <a href="https://github.com/walkerpontes" className="flex gap-2 ">
+            <a href="https://github.com/walkerpontes" className="flex gap-2 " target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
 
         <p className="copyright">
-          &copy; Copyright - {new Date().getFullYear()}. All rights reserved
+          &copy; Copyright - {new Date().getFullYear()}. Todos os direitos reservados
         </p>
       </footer>
     </>
