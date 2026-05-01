@@ -56,6 +56,7 @@ export default function About() {
             >
               <a
                 href="https://www.instagram.com/walkerponts/"
+                target="_blank"
                 className="w-full h-full flex items-center justify-center gap-2 "
               >
                 <svg
@@ -77,6 +78,7 @@ export default function About() {
             >
               <a
                 href="https://www.linkedin.com/in/walkerpontes/"
+                target="_blank"
                 className="w-full h-full flex items-center justify-center gap-2"
               >
                 <svg
@@ -100,6 +102,7 @@ export default function About() {
             >
               <a
                 href="https://github.com/walkerpontes"
+                target="_blank"
                 className="w-full h-full flex items-center justify-center gap-2"
               >
                 <svg
@@ -123,6 +126,7 @@ export default function About() {
             >
               <a
                 href={curriculo}
+                target="_blank"
                 download="curriculoWalkerPontes.pdf"
                 className="w-full h-full flex items-center justify-center gap-2"
               >

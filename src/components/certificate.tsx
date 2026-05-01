@@ -215,7 +215,7 @@ export default function Certificate() {
                 <CardTitle className="text-[15px]">{cert.theme}</CardTitle>
                 <CardAction>
                   <Button variant="secondary" className="h-10">
-                    <a href={cert.link} className="w-full h-full flex flex-row gap-2 items-center">
+                    <a href={cert.link} className="w-full h-full flex flex-row gap-2 items-center" target="_blank">
                       <span>Certificado</span>
                       <MoveUpRight />
                     </a>

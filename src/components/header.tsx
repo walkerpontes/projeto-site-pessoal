@@ -1,8 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type MouseEvent } from 'react';
 import icone from '../assets/iconecodigo.png';
 
 export default function Header() {
   const [isScrolled, setScrolled] = useState(false);
+
+  const nav = (e:MouseEvent<HTMLAnchorElement>,navId:string) => {
+    e.preventDefault()
+   const element = document.getElementById(navId);
+   if(element) element.scrollIntoView({behavior:"smooth"})
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,10 +36,10 @@ export default function Header() {
           <div
             className={`md:text-2xl flex flex-row gap-5 transition-transform items-center duration-500 ${isScrolled ? 'xl:-translate-x-40' : 'xl:translate-x-0'}`}
           >
-            <a href="#experiencia">Experiências</a>
-            <a href="#projeto">Projetos</a>
-            <a href="#certificado">Certificados</a>
-            <a href="#contato">Contato</a>
+            <a href="" onClick={(e) => nav(e,"experiencia")}>Experiências</a>
+            <a href="" onClick={(e) => nav(e,"projeto")}>Projetos</a>
+            <a href="" onClick={(e) => nav(e,"certificado")}>Certificados</a>
+            <a href="" onClick={(e) => nav(e,"contato")}>Contato</a>
           </div>
           
         </div>
