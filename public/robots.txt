@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://walkerpontes.vercel.app/sitemap.xml
+Sitemap: https://walkerpontes.vercel.app/site_map.xml
